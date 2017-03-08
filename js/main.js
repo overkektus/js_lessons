@@ -1,12 +1,37 @@
-/*
-var x;
-var strings = 'string';
-var another_strings = "another string";
-var booleanType = (x > 5);
-console.log(x);
-*/
+//Arithmetic
+console.log("Arithmetic");
+var a = 1;
+var b = 4;
+console.log(a + b);
+console.log(a - b);
+console.log(a / b);
+console.log(a * b);
+console.log(3 % 2);
 
-var owerFirstObject = {x: 5, y: 'string'}
-console.log(owerFirstObject.x);
-owerFirstObject.x = 'new string';
-console.log(owerFirstObject.x);
+a++;
+console.log(a);
+a--;
+console.log(a);
+
+b *= 2;
+console.log(b);
+
+//Logical
+console.log("Logical");
+console.log(a <= b);
+var a = 4;
+var b = '4';
+
+console.log(a == b);
+console.log(a !== b);
+console.log(a === b);
+
+console.log((2 > 1) || (3 < 2));
+
+//String
+console.log("String")
+var newString = 'myString';
+newString += ', hello!';
+console.log(newString + a);
+
+var c = (2 > 4) ? console.log('1st') : console.log('2d');
