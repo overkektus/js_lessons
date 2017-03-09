@@ -1,31 +1,45 @@
-//Conditional operators
-//if....else
-var a = 2;
-if (a != 2) {
-   console.log('a != 2');
-} else if (a < 2) {
-   console.log('a < 2');
-} else if (a > 2) {
-   console.log('a > 2');
-} else {
-   console.log('a == 2');
+//Loops in javascript
+function sayHi() {
+   console.log('Hi!');
 }
 
-console.log('-------');
-
-//switch
-a = 5;
-switch(a) {
-   case 1: console.log('a == 1');
-      break;
-   case 2: console.log('a == 2');
-      break;
-   case 3: console.log('a == 3');
-      break;
-   default: console.log('default');
-      break;
+var count = 5;
+for (var i = 0; i < count; i++) {
+   sayHi();
 }
 
-console.log('-------');
-// ? :
-(a > 2) ? console.log('a > 2') : console.log('a <= 2');
+for (i = 0; i < count; i++) {
+   if (i == 3) {
+      break;
+   } else {
+      sayHi();
+   }
+}
+
+for (i = 0; i < count; i++) {
+   if (i == 3) {
+      continue;
+   } else {
+      sayHi();
+   }
+}
+
+for (i = 10; i > 0; i--) {
+  sayHi();
+}
+
+var j = 0;
+for (;j < count;) {
+  sayHi();
+   j++;
+}
+
+for (var k = 'a'; k != 'aaaaa'; k+='a') {
+   sayHi();
+}
+
+i = 0;
+while (i < count) {
+   sayHi();
+   i++;
+}
