@@ -1,38 +1,31 @@
-//Functions
-//console.log('hello, world')
-
-function sayHello() {
-   console.log('hello, world');
+//Conditional operators
+//if....else
+var a = 2;
+if (a != 2) {
+   console.log('a != 2');
+} else if (a < 2) {
+   console.log('a < 2');
+} else if (a > 2) {
+   console.log('a > 2');
+} else {
+   console.log('a == 2');
 }
 
-sayHello();
-sayHello();
+console.log('-------');
 
-var sayHi = function () {
-   console.log('Hi');
-};
-
-sayHi();
-
-var a = 1;
-var b = 2;
-
-function sum(x, y) {
-   return x + y;
+//switch
+a = 5;
+switch(a) {
+   case 1: console.log('a == 1');
+      break;
+   case 2: console.log('a == 2');
+      break;
+   case 3: console.log('a == 3');
+      break;
+   default: console.log('default');
+      break;
 }
 
-console.log(sum(a, b));
-console.log(sum(5, 8));
-
-var sayHi = function(name) {
-   console.log('Hello, ' + name);
-};
-
-sayHi('Ilia');
-
-function sayHello(name) {
-   console.log('Another hello, ' + name);
-}
-
-sayHi('Vlad');
-sayHello('Vlad');
+console.log('-------');
+// ? :
+(a > 2) ? console.log('a > 2') : console.log('a <= 2');
