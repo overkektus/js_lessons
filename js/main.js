@@ -1,37 +1,38 @@
-//Arithmetic
-console.log("Arithmetic");
+//Functions
+//console.log('hello, world')
+
+function sayHello() {
+   console.log('hello, world');
+}
+
+sayHello();
+sayHello();
+
+var sayHi = function () {
+   console.log('Hi');
+};
+
+sayHi();
+
 var a = 1;
-var b = 4;
-console.log(a + b);
-console.log(a - b);
-console.log(a / b);
-console.log(a * b);
-console.log(3 % 2);
+var b = 2;
 
-a++;
-console.log(a);
-a--;
-console.log(a);
+function sum(x, y) {
+   return x + y;
+}
 
-b *= 2;
-console.log(b);
+console.log(sum(a, b));
+console.log(sum(5, 8));
 
-//Logical
-console.log("Logical");
-console.log(a <= b);
-var a = 4;
-var b = '4';
+var sayHi = function(name) {
+   console.log('Hello, ' + name);
+};
 
-console.log(a == b);
-console.log(a !== b);
-console.log(a === b);
+sayHi('Ilia');
 
-console.log((2 > 1) || (3 < 2));
+function sayHello(name) {
+   console.log('Another hello, ' + name);
+}
 
-//String
-console.log("String")
-var newString = 'myString';
-newString += ', hello!';
-console.log(newString + a);
-
-var c = (2 > 4) ? console.log('1st') : console.log('2d');
+sayHi('Vlad');
+sayHello('Vlad');
