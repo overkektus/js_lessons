@@ -1,24 +1,36 @@
-//Arrays
-var fruits = ['apple', 'lemon', 'orange'];
-//var fruits2 = new Array('apple2', 'orange2');
-//console.log(fruits2.length);
+//Array Methods
+var array = [1, 2, 3, 4, 5];
+//Push
+//array.push(6)
 
-console.log(fruits.length);
-fruits[3] = 'pineapple';
-console.log(fruits.length);
-console.log(fruits[3]);
+//Pop
+//array.pop();
 
-fruits.push(4);
-console.log(fruits);
+//Unshift
+//array.unshift(0);
 
-var fruits = ['apple', 'lemon', 'orange'];
-for (var i = 0; i < fruits.length; i++) {
-   console.log(fruits[i]);
-   fruits[i] = '2';
-}
+//Shift
+//array.shift();
 
-console.log(fruits.length);
-console.log(fruits);
-fruits[20] = 'another element';
-console.log(fruits);
-console.log(fruits.length);
+//Map
+/*
+var mapped = array.map(function(element, index) {
+   return element + index;
+});
+console.log(array);
+*/
+
+//Filter
+/*
+var filtered = array.filter(function(element) {
+   var result = (element > 2);
+   return result;
+});
+*/
+
+//Reduce
+var reducedValue = array.reduce(function(acc, element, index) {
+   return acc + element;
+});
+console.log(array);
+console.log(reducedValue);
