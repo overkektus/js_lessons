@@ -1,45 +1,27 @@
-//Loops in javascript
-function sayHi() {
-   console.log('Hi!');
-}
-
-var count = 5;
-for (var i = 0; i < count; i++) {
-   sayHi();
-}
-
-for (i = 0; i < count; i++) {
-   if (i == 3) {
-      break;
-   } else {
-      sayHi();
+//Objects
+var user1 = {
+   name: 'Vlad',
+   login: 'myLogin',
+   password: 'pass',
+   age: 22,
+   logIn: function() {
+      console.log(this.name + ' has logged in! Hi!');
+   },
+   logOut: function() {
+      console.log(this.name + ' has logged out! Bye!');
    }
-}
+};
 
-for (i = 0; i < count; i++) {
-   if (i == 3) {
-      continue;
-   } else {
-      sayHi();
-   }
-}
+user1.logIn();
+user1.logOut();
+console.log(user1.login);
 
-for (i = 10; i > 0; i--) {
-  sayHi();
-}
+console.log(user1['name']);
+user1['logIn']();
 
-var j = 0;
-for (;j < count;) {
-  sayHi();
-   j++;
-}
+console.log(user1);
+user1.firstName = 'Vlad firstName';
+console.log(user1.firstName);
 
-for (var k = 'a'; k != 'aaaaa'; k+='a') {
-   sayHi();
-}
-
-i = 0;
-while (i < count) {
-   sayHi();
-   i++;
-}
+delete user1.firstName;
+console.log(user1.firstName);
