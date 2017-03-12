@@ -1,36 +1,23 @@
-//Array Methods
-var array = [1, 2, 3, 4, 5];
-//Push
-//array.push(6)
+var someStr = 'gmy string';
+var someStr2= ' kek';
+console.log('.charAt — ' + someStr.charAt(0));
+console.log('.indexOf — ' + someStr.indexOf('str'));
+console.log('.indexOf — ' + someStr.indexOf('gdk'));
+console.log('.lastIndexOf — ' + someStr.lastIndexOf('g'));
+console.log('.toUpperCase — ' + someStr.toUpperCase());
+console.log('.charCodeAt — ' + someStr.charCodeAt(0));
+console.log('.concat — ' + someStr.concat(someStr2));
+console.log('');
 
-//Pop
-//array.pop();
+var anotherStr = new String('my string');
+console.log(anotherStr);
+console.log(anotherStr.valueOf());
 
-//Unshift
-//array.unshift(0);
+var someNum = 4.32;
+console.log('.toFixed — ' + someNum.toFixed(1));
+console.log('.toExponential — ' + someNum.toExponential());
 
-//Shift
-//array.shift();
+//var anotherNum = new Number(4.32);
 
-//Map
-/*
-var mapped = array.map(function(element, index) {
-   return element + index;
-});
-console.log(array);
-*/
-
-//Filter
-/*
-var filtered = array.filter(function(element) {
-   var result = (element > 2);
-   return result;
-});
-*/
-
-//Reduce
-var reducedValue = array.reduce(function(acc, element, index) {
-   return acc + element;
-});
-console.log(array);
-console.log(reducedValue);
+var someBool = true;
+//var anotherBool = new Boolean(true);
