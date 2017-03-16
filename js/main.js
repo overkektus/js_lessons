@@ -1,26 +1,19 @@
-//объект Math
-console.log(Math.E);
-console.log(Math.PI);
+// Date object
+console.log(new Date());
+var birthday = new Date("June 16 1993");
+console.log(birthday);
+var birthday2 = new Date(1993, 5, 16, 22);
+console.log(birthday2);
 
-//.abs
-console.log(Math.abs('-5'));     // 5
-console.log(Math.abs(-9));       // 9
-console.log(Math.abs(null));     // 0
-console.log(Math.abs('string')); // NaN
-console.log(Math.abs());         // NaN
+// .now
+console.log(Date.now());
 
-//.ceil
-console.log(Math.ceil(2));       // 2
-console.log(Math.ceil(2.4));     // 3
+// .parse
+console.log(Date.parse("Wed Jun 16 1968"));
 
-//.floor
-console.log(Math.floor(3));      // 3
-console.log(Math.floor(3.7));    // 3
+// .UTC
+var birthday3 = new Date(Date.UTC(1993, 5, 16, 22));
+console.log(birthday3);
 
-//.random
-console.log(Math.random());
-console.log(Math.round(Math.random() * 10));
-
-//.sign
-console.log(Math.sign(-5));      // -1
-console.log(Math.sign(4));       // 1
+var dateAlert = "Today is " + birthday.getDay() + " " + birthday.getFullYear()+" and month is " + (birthday.getMonth() + 1);
+console.log(dateAlert);
