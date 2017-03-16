@@ -1,23 +1,26 @@
-var someStr = 'gmy string';
-var someStr2= ' kek';
-console.log('.charAt — ' + someStr.charAt(0));
-console.log('.indexOf — ' + someStr.indexOf('str'));
-console.log('.indexOf — ' + someStr.indexOf('gdk'));
-console.log('.lastIndexOf — ' + someStr.lastIndexOf('g'));
-console.log('.toUpperCase — ' + someStr.toUpperCase());
-console.log('.charCodeAt — ' + someStr.charCodeAt(0));
-console.log('.concat — ' + someStr.concat(someStr2));
-console.log('');
+//объект Math
+console.log(Math.E);
+console.log(Math.PI);
 
-var anotherStr = new String('my string');
-console.log(anotherStr);
-console.log(anotherStr.valueOf());
+//.abs
+console.log(Math.abs('-5'));     // 5
+console.log(Math.abs(-9));       // 9
+console.log(Math.abs(null));     // 0
+console.log(Math.abs('string')); // NaN
+console.log(Math.abs());         // NaN
 
-var someNum = 4.32;
-console.log('.toFixed — ' + someNum.toFixed(1));
-console.log('.toExponential — ' + someNum.toExponential());
+//.ceil
+console.log(Math.ceil(2));       // 2
+console.log(Math.ceil(2.4));     // 3
 
-//var anotherNum = new Number(4.32);
+//.floor
+console.log(Math.floor(3));      // 3
+console.log(Math.floor(3.7));    // 3
 
-var someBool = true;
-//var anotherBool = new Boolean(true);
+//.random
+console.log(Math.random());
+console.log(Math.round(Math.random() * 10));
+
+//.sign
+console.log(Math.sign(-5));      // -1
+console.log(Math.sign(4));       // 1
