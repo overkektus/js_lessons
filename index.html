@@ -5,31 +5,21 @@
    <title>JS tutorial</title>
 </head>
 <body>
-   <h1 id="header">Start heading</h1>
-   <div class="container">
-      <p name="myP">Start text one</p>
-      <p>Start text two</p>
-      <p name="myP">Start text three</p>
-   </div>
+   <h1 id="header">Colored<span style="color:#fc4c4c;"> Title</span></h1>
    <script type="text/javascript">
-      console.log(document);
-      var paragraph = document.getElementsByTagName('p')[0];
-      paragraph.className = "anotherOne";
-      console.log(paragraph);
+      var el = document.getElementById('header');
       
-      var paragraph2 = document.getElementsByClassName('anotherOne')[0];
-      paragraph2.style.backgroundColor = "#ccc";
-      paragraph2.style.padding = "40px";
-      console.log(paragraph2);
+      // innerHTML
+      console.log(el.innerHTML);
+      el.innerHTML = el.innerHTML + '<i> End</i>';
       
-      var paragraph3 = document.getElementsByName('myP')[0];
-      paragraph3.style.color = "red";
+      // textContent
+      console.log(el.textContent);
+      el.textContent = el.textContent + '<i> End</i>';
+      console.log(el.textContent);
       
-      var header = document.getElementById('header');
-      header.style.fontSize = "20px";
+      // innerText
       
-      var element = document.querySelectorAll('.container > .anotherOne[name="myP"]');
-      console.log(element);
    </script>
 </body>
 </html>
