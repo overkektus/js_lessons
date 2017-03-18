@@ -5,6 +5,31 @@
    <title>JS tutorial</title>
 </head>
 <body>
-      <script type="text/javascript" src="js/main.js"></script>
+   <h1 id="header">Start heading</h1>
+   <div class="container">
+      <p name="myP">Start text one</p>
+      <p>Start text two</p>
+      <p name="myP">Start text three</p>
+   </div>
+   <script type="text/javascript">
+      console.log(document);
+      var paragraph = document.getElementsByTagName('p')[0];
+      paragraph.className = "anotherOne";
+      console.log(paragraph);
+      
+      var paragraph2 = document.getElementsByClassName('anotherOne')[0];
+      paragraph2.style.backgroundColor = "#ccc";
+      paragraph2.style.padding = "40px";
+      console.log(paragraph2);
+      
+      var paragraph3 = document.getElementsByName('myP')[0];
+      paragraph3.style.color = "red";
+      
+      var header = document.getElementById('header');
+      header.style.fontSize = "20px";
+      
+      var element = document.querySelectorAll('.container > .anotherOne[name="myP"]');
+      console.log(element);
+   </script>
 </body>
 </html>
