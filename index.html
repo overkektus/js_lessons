@@ -5,20 +5,27 @@
    <title>JS tutorial</title>
 </head>
 <body>
-   <h1 id="header">Colored<span style="color:#fc4c4c;"> Title</span></h1>
+   <h1 id="header">
+      Colored<span style="color:#fc4c4c;"> Title</span>
+   </h1>
    <script type="text/javascript">
       var el = document.getElementById('header');
+      console.log(el.attributes);
+      // el.hasAttribute('attrName');
+      console.log(el.hasAttribute('id'));
+      console.log(el.hasAttribute('info'));
       
-      // innerHTML
-      console.log(el.innerHTML);
-      el.innerHTML = el.innerHTML + '<i> End</i>';
+      // el.getAttribute('attrName');
+      console.log(el.getAttribute('id'));
       
-      // textContent
-      console.log(el.textContent);
-      el.textContent = el.textContent + '<i> End</i>';
-      console.log(el.textContent);
+      // el.setAttribute('attrName', 'attrValue');
+      el.setAttribute('info', 'some info');
+      console.log(el.getAttribute('info'));
       
-      // innerText
+      // el.removeAttribute('attrName');
+      el.removeAttribute('id');
+      console.log(el);
+      console.log(el.getAttribute('id'));
       
    </script>
 </body>
